@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.simple.android">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- 创建渠道占位符 -->
+        <meta-data
+            android:name="PRODUCT"
+            android:value="${CHANNEL_VALUE}" />
+
+        <activity android:name=".home.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.MyComponentActivity" />
+        <activity android:name=".view.MyViewActivity" />
+        <activity android:name=".database.MyDataBaseActivity" />
+        <activity android:name=".network.MyNetWorkActivity" />
+        <activity android:name=".kotlin.MyKotlinActivity" />
+        <activity android:name=".image.MyImageActivity" />
+        <activity android:name=".modle.MyModeFrameActivity" />
+        <activity android:name=".modle.mvp.view.MyMVPActivity" />
+        <activity android:name=".modle.mvc.control.MyMVCActivity" />
+        <activity android:name=".modle.mvvm.MyMVVMActivity" />
+        <activity android:name=".image.picasso.MyPicassoActivity" />
+        <activity android:name=".image.glide.MyGlideActivity" />
+        <activity android:name=".network.retrofit.rxjava.MyRxjavaActivity"></activity>
+        <activity android:name=".image.fresco.MyFrescoActivity" />
+        <activity android:name=".network.okhttp.MyOkhttpActivity" />
+        <activity android:name=".network.retrofit.MyRetrofitActivity" />
+        <activity android:name=".network.retrofit.MyOnlyRetrofitActivity" />
+        <activity android:name=".network.retrofit.MyRetrofitRxjavaActivity" />
+        <activity android:name=".modle.MyFrameActivity" />
+        <activity android:name=".network.asynchttp.MyAsyncTaskActivity" />
+        <activity android:name=".view.MyWebViewActivity" />
+        <activity android:name=".modle.annotation.MyAnnotationActivity" />
+        <activity android:name=".modle.annotation.MyAndroidAnnotationsActivity_" />
+        <activity android:name=".modle.annotation.ButterknifeActivity" />
+    </application>
+
+</manifest>

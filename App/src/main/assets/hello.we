@@ -1,0 +1,5 @@
+<template>
+    <div>
+     <text style="font-size:100px;">hello world! </text>
+    </div>
+</template>

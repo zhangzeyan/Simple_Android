@@ -1,0 +1,18 @@
+//统一管理module版本号
+ext{
+    android= [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.0",
+            minSdkVersion: 15,
+            targetSdkVersion: 25,
+            versionCode: 1,
+            versionName: "1.0"
+    ]
+
+    dependencies= [
+            supportv7: 'com.android.support:appcompat-v7:25.3.1',
+    ]
+
+
+
+}
