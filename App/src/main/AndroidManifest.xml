@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -32,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".component.MyComponentActivity" />
+        <activity android:name=".basic.AndroidBasicActivity" />
         <activity android:name=".view.MyViewActivity" />
         <activity android:name=".database.MyDataBaseActivity" />
         <activity android:name=".network.MyNetWorkActivity" />
@@ -55,7 +56,11 @@
         <activity android:name=".view.MyWebViewActivity" />
         <activity android:name=".modle.annotation.MyAnnotationActivity" />
         <activity android:name=".modle.annotation.MyAndroidAnnotationsActivity_" />
-        <activity android:name=".modle.annotation.ButterknifeActivity" />
+        <activity android:name=".modle.annotation.MyButterknifeActivity" />
+        <activity android:name=".system.permission.MyPerMissionActivity" />
+        <activity android:name=".system.permission.MyPerMission2Activity" />
+        <activity android:name=".system.permission.PerMissionGenActivity" />
+        <activity android:name=".system.permission.PerMissionDispatcherActivity" />
     </application>
 
 </manifest>

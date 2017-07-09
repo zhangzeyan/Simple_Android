@@ -20,7 +20,7 @@ public class MyAnnotationActivity extends BaseActivity {
     }
 
     public void clickMyButterKnife(View view) {
-        startActivity(new Intent(this,ButterknifeActivity.class));
+        startActivity(new Intent(this,MyButterknifeActivity.class));
 
     }
 

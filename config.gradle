@@ -6,7 +6,8 @@ ext{
             minSdkVersion: 15,
             targetSdkVersion: 25,
             versionCode: 1,
-            versionName: "1.0"
+            versionName: "1.0",
+            applicationId: "com.simple.android"
     ]
 
     dependencies= [

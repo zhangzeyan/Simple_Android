@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="com.simple.android.basic.AndroidBasicActivity">
-
+    tools:context=".system.permission.MyPerMissionActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/activity_main_toolbar"
@@ -17,47 +16,24 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <TextView
-        android:id="@+id/my_mvc"
+        android:id="@+id/my_telnum"
         style="@style/baseItemStyle"
-        android:onClick="clickMyMVC"
-        android:text="1. MVC模式"
+        android:onClick="clickMyTelnum"
+        android:text="未使用封装"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/activity_main_toolbar" />
 
-
     <TextView
-        android:id="@+id/my_mvp"
+        android:id="@+id/my_telnum2"
         style="@style/baseItemStyle"
-        android:onClick="clickMyMVP"
-        android:text="2. MVP模式"
+        android:onClick="clickMyTelnum2"
+        android:text="使用封装"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/my_mvc" />
-
-
-    <TextView
-        android:id="@+id/my_mvvm"
-        style="@style/baseItemStyle"
-        android:onClick="clickMyMVVM"
-        android:text="3. MVVM模式"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/my_mvp" />
-
-
-    <TextView
-        android:id="@+id/my_frame"
-        style="@style/baseItemStyle"
-        android:onClick="clickMyFrame"
-        android:text="4. 常见框架"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/my_mvvm" />
+        app:layout_constraintTop_toBottomOf="@+id/my_telnum" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -12,7 +12,7 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
 /**
- * @fileName:
+ * @fileName: AndroidAnnotations使用实例
  * @author: zhangzeyan
  * @date: 2017/7/6
  * @time: 下午11:45

@@ -11,13 +11,13 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * @fileName:
+ * @fileName: AndroidAnnotations使用实例
  * @author: zhangzeyan
  * @date: 2017/7/6
  * @time: 下午11:44
  * @description:
  **/
-public class ButterknifeActivity extends BaseActivity {
+public class MyButterknifeActivity extends BaseActivity {
 
     @BindView(R.id.my_intruduction)
     TextView myIntruduction;

@@ -20,7 +20,7 @@
         android:id="@+id/my_component"
         style="@style/baseItemStyle"
         android:onClick="clickMyComponent"
-        android:text="1. 四大组件"
+        android:text="1. Android基础"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -98,6 +98,15 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_design_patterns" />
+
+    <TextView
+        android:id="@+id/my_permisstion"
+        style="@style/baseItemStyle"
+        android:onClick="clickMyPermisstion"
+        android:text="10. Android权限"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_annotation" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.simple.android.component;
+package com.simple.android.basic;
 
 import android.view.View;
 
@@ -6,13 +6,13 @@ import com.simple.android.R;
 import com.simple.android.home.BaseActivity;
 
 /**
- * @fileName:
+ * @fileName: Android基础
  * @author: zhangzeyan
  * @date: 2017/5/26
  * @time: 上午11:00
  * @description:
  **/
-public class MyComponentActivity extends BaseActivity {
+public class AndroidBasicActivity extends BaseActivity {
 
     @Override
     protected void setContentView() {

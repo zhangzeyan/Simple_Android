@@ -5,13 +5,14 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.simple.android.R;
-import com.simple.android.component.MyComponentActivity;
+import com.simple.android.basic.AndroidBasicActivity;
 import com.simple.android.database.MyDataBaseActivity;
 import com.simple.android.image.MyImageActivity;
 import com.simple.android.kotlin.MyKotlinActivity;
+import com.simple.android.modle.MyModeFrameActivity;
 import com.simple.android.modle.annotation.MyAnnotationActivity;
 import com.simple.android.network.MyNetWorkActivity;
-import com.simple.android.modle.MyModeFrameActivity;
+import com.simple.android.system.permission.MyPerMissionActivity;
 import com.simple.android.view.MyViewActivity;
 
 
@@ -36,7 +37,14 @@ public class MainActivity extends BaseActivity {
             Toast.makeText(this,"跳转到组件",Toast.LENGTH_SHORT).show();
         }
 
-        startActivity(new Intent(this,MyComponentActivity.class));
+//        if (ContextCompat.checkSelfPermission(this,
+//                Manifest.permission.READ_CONTACTS)
+//                != PackageManager.PERMISSION_GRANTED) {
+//        }else{
+//            //
+//        }
+
+        startActivity(new Intent(this,AndroidBasicActivity.class));
     }
 
     public void clickMyView(View view) {
@@ -73,5 +81,9 @@ public class MainActivity extends BaseActivity {
     public void clickMyAnnotation(View view) {
         startActivity(new Intent(this, MyAnnotationActivity.class));
 
+    }
+
+    public void clickMyPermisstion(View view) {
+        startActivity(new Intent(this, MyPerMissionActivity.class));
     }
 }
