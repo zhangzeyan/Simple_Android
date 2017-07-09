@@ -36,4 +36,16 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_butterknife" />
 
+    <TextView
+        android:id="@+id/my_dagger2"
+        style="@style/baseItemStyle"
+        android:onClick="clickMyDagger2"
+        android:text="3. dagger2框架"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_annotations" />
+
+
+
+
 </android.support.constraint.ConstraintLayout>

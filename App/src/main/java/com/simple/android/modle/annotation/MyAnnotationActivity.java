@@ -27,4 +27,9 @@ public class MyAnnotationActivity extends BaseActivity {
     public void clickMyAnnotations(View view) {
         startActivity(new Intent(this,MyAndroidAnnotationsActivity_.class));
     }
+
+    public void clickMyDagger2(View view) {
+        startActivity(new Intent(this,MyDagger2Activity.class));
+
+    }
 }

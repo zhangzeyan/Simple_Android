@@ -61,6 +61,7 @@
         <activity android:name=".system.permission.MyPerMission2Activity" />
         <activity android:name=".system.permission.PerMissionGenActivity" />
         <activity android:name=".system.permission.PerMissionDispatcherActivity" />
+        <activity android:name=".modle.annotation.MyDagger2Activity" />
     </application>
 
 </manifest>
