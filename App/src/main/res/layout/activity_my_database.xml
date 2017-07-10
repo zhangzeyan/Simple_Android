@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="com.simple.android.basic.AndroidBasicActivity">
+    tools:context="com.simple.android.database.MyDataBaseActivity">
 
 
     <android.support.v7.widget.Toolbar
@@ -15,6 +15,44 @@
         android:minHeight="30dp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="0dp" />
+
+
+    <TextView
+        android:id="@+id/my_sqlite"
+        style="@style/baseItemStyle"
+        android:onClick="clickMySqlite"
+        android:text="1. Sqlite基础"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_toolbar" />
+
+    <TextView
+        android:id="@+id/my_litepal"
+        style="@style/baseItemStyle"
+        android:onClick="clickMyLitePal"
+        android:text="2. LitePal库"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_sqlite" />
+
+    <TextView
+        android:id="@+id/my_greendao"
+        style="@style/baseItemStyle"
+        android:onClick="clickMyGreenDao"
+        android:text="3. GreenDao库"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_litepal" />
+
+    <TextView
+        android:id="@+id/my_ormlite"
+        style="@style/baseItemStyle"
+        android:onClick="clickMyOrmLite"
+        android:text="4. OrmLite库"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_greendao" />
 
 
 </android.support.constraint.ConstraintLayout>

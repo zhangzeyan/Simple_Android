@@ -1,7 +1,9 @@
 package com.simple.android;
 
-import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 
 /**
@@ -11,21 +13,37 @@ import org.junit.Test;
  */
 public class ExampleUnitTest {
 
+
+    Calculator mCalculator;
+
+    @Before
+    public void setup() {
+        if (mCalculator == null)
+             mCalculator = new Calculator();
+    }
+
     @Test
-    public void addition_isCorrect() throws Exception {
+    public void testAdd() throws Exception {
+        int sum = mCalculator.add(18, 6);
+        assertEquals(24, sum);
+    }
 
-        Calculator calculator = new Calculator();
-        int sum = calculator.add(1, 2);
-        Assert.assertEquals(3, sum);
+    @Test
+    public void testMultiply() throws Exception {
+        int product = mCalculator.multiply(18, 6);
+        assertEquals(108, product);
+    }
 
+    @Test
+    public void testSubtract() throws Exception {
+        int product = mCalculator.subtract(18, 6);
+        assertEquals(12, product);
     }
 
 
-
-    public class Calculator {
-        public int add(int one, int another) {
-            //为了简单起见，暂不考虑溢出等情况。
-            return one + another ;
-        }
+    @Test
+    public void testubtract() throws Exception {
+        int product = mCalculator.divide(18, 6);
+        assertEquals(3, product);
     }
 }
